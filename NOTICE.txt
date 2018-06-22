@@ -1,0 +1,1 @@
+This project was build using Python 3.6.5 (on win32)
