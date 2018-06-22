@@ -14,3 +14,4 @@ As you can see from this example, you should keep in mind that the smaller the s
 
 # Additional information:
 You can check the grading system in badges.json file under [src\main\resources](https://github.com/shamanengine/BookWorm/blob/master/src/main/resources/badges.json) folder
+[src\main\resources1](../blob/master/src/main/resources/badges.json)
