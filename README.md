@@ -1,4 +1,4 @@
-#Project BookWorm
+# Project BookWorm
 
 ## Summary
 The subroutine that allows a user to analyze texts and understand how much the author of the text is graphomaniac. The reference measuring system is based on "War and Peace" by Lev Tolstoy
@@ -13,4 +13,4 @@ If you have a sentence with 8 words: "The man is a wolf to a man" which contains
 As you can see from this example, you should keep in mind that the smaller the source text is, the less consistent the estimate would be: one-word text author will always kill Lev Tolstoy +)). To reach the certain level of consistency you need to enter text with at least ____ words which is approximately ____ pages long.
 
 ## Additional information:
-You can check the grading system in badges.json file under [src\main\resources1](../master/src/main/resources/badges.json) folder
+I highly recommend to check the grading system in badges.json file under [src\main\resources](../master/src/main/resources/badges.json) folder
