@@ -1,5 +1,5 @@
 # Project BookWorm
-The subroutine that allows a user to analyze texts and understand how much the author of the text is graphomaniac. The reference measuring system is based on "War and Peace" by Lev Tolstoy
+Subroutine that allows a user to analyze texts and understand how much the author of the text is graphomaniac. The reference measuring system is based on "War and Peace" by Lev Tolstoy
 
 ## How it works:
 The system counts all unique words and the total amount of words used in the text and divides one to another. The result is the word mediocrity index (always <= 1). This index is compared to Lev Tolstoy's word mediocrity index and the final score is counted
@@ -11,4 +11,12 @@ If you have a sentence with 8 words: "The man is a wolf to a man" which contains
 As you can see from this example, you should keep in mind that the smaller the source text is, the less consistent the estimate would be: one-word text author will always kill Lev Tolstoy +)). To reach the certain level of consistency you need to enter text with at least ____ words which is approximately ____ pages long
 
 ## Additional information:
-I highly recommend to check the grading system in badges.json file under [src\main\resources](../master/src/main/resources/badges.json) folder
+
+### Grading System
+I highly recommend to check the grading system in [badges.json](../master/src/main/resources/badges.json)
+
+### Algorithms
+Algorithms and libs used are described in [LevProstoy.html](../master/src/main/resources/LevProstoy.html)
+
+### Resources
+All additional info can be found under [src\main\resources](../master/src/main/resources/) folder

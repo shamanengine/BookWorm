@@ -1,19 +1,15 @@
 import json
-# import context
-# from main.py.DAO.entities.badge import Badge
-# from entities.badge import Badge
 from src.main.py.DAO.entities.badge import Badge
 
 
 class BadgeDAO:
-    """DAO class to work with Badges"""
+    """DAO class to work with badges"""
 
-    # def __init__(self, source_filename="../../resources/badges.json"):
     def __init__(self, source_filename="../../resources/badges.json"):
         self.source_filename = source_filename
 
     def findAllBadges(self):
-        """Retrives info about all badges"""
+        """Retrieves info about all badges"""
         badges = []
         try:
             with open(self.source_filename) as source_file:
@@ -29,8 +25,8 @@ class BadgeDAO:
 
         except FileNotFoundError:
             print("File '%s' was not found" % self.source_filename)
-        # except BaseException:
-        # 	print("Something wrong at showBadges() method")
+        except BaseException:
+            print("Something wrong at findAllBadges() method")
 
         return badges
 
@@ -56,6 +52,8 @@ if __name__ == '__main__':
     badge1 = badgeDAO.findBadgeByIndex(0.2)
     print(badge1)
 
+    print(badgeDAO.findBadgeByIndex(0.2).title)
+
     badge2 = badgeDAO.findBadgeByIndex(0.4)
     print(badge2)
 
@@ -78,6 +76,7 @@ if __name__ == '__main__':
 
     badge7 = badgeDAO.findBadgeByIndex(1111)
     print(badge7)
+
 
 # badge8 = badgeDAO.findBadgeByIndex("A")
 # print(badge8)

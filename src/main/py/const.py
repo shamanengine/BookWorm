@@ -1,5 +1,6 @@
 class Const:
     """Constants to be used in the project"""
+
     BADGE_JSON_MAIN = "../../resources/badges.json"
     BADGE_JSON_MAIN_ABS = "src/main/resources/badges.json"
     BADGE_JSON_TEST = "../resources/badges.json"
@@ -11,7 +12,6 @@ if __name__ == '__main__':
     const = Const
     print(const.BADGE_JSON_TEST)
     print(Const.BADGES_COUNT)
-
 
 # Put in const.py...:
 # class _const:

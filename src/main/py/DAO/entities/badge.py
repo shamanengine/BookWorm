@@ -1,7 +1,8 @@
-# from ..badgeDAO import BadgeDAO
-class Badge():
+class Badge:
     """Representation of a badge with title, prompt, index and description"""
+
     index_high: float
+    index_low: float
 
     def __init__(self, title, prompt, index_low, index_high, description):
         self.title = title

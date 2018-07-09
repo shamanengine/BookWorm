@@ -1,11 +1,10 @@
-import context
-from main.py import const
-from main.py.DAO.badgeDAO import BadgeDAO
-# from main.py.DAO.entities.badge import Badge
+from src.main.py.DAO.badgeDAO import BadgeDAO
+from src.main.py.DAO.entities.badge import Badge
+from src.main.py.const import Const
 
-# print(Badge("A", "AA", 0.25, 0.5, "descr"))
-print(const.BADGE_JSON_FILENAME)
-# badgeDAO = BadgeDAO(const.BADGE_JSON_FILENAME)
+badgeDAO = BadgeDAO(Const.BADGE_JSON_TEST)
+
+badge1 = badgeDAO.findBadgeByIndex(0.2)
+print(badge1.title)
 
 # print(badgeDAO)
-

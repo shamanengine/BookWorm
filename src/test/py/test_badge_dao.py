@@ -1,27 +1,37 @@
 import unittest
-# import context
 from src.main.py.const import Const
-from src.main.py.DAO.entities.badge import Badge
 from src.main.py.DAO.badgeDAO import BadgeDAO
-
-
-# print(Badge("A", "AA", 0.25, 0.5, "descr"))
-#
-# badgeDAO = BadgeDAO(Const.BADGE_JSON_TEST)
-# badges = badgeDAO.findAllBadges()
-# print("\t==== BADGES ====\n")
-# for badge in badges:
-#     print(badge, '\n')
 
 
 class TestBadgeDAO(unittest.TestCase):
     """Tests DAO class to work with badges"""
 
-    def test_findAllBadges(self):
-        """Tests that all badges are fetched properly"""
+    def setUp(self):
+        self.badge_dao = BadgeDAO(Const.BADGE_JSON_TEST)
 
-        badgeDAO = BadgeDAO(Const.BADGE_JSON_TEST)
-        self.assertEqual(len(badgeDAO.findAllBadges()), Const.BADGES_COUNT)
+        self.test_badges = {
+            "Pithecanthropus": {0, 0.1, 0.2},
+            "Younger sister": {0.3, 0.4},
+            "Pragmatic writer": {0.6, 0.7},
+            "Neat essayist": {0.8, 0.9},
+            "Beyond Good and Evil": {1, 1.2, 10, 998, 999998}
+        }
+
+    def test_findAllBadges(self):
+        """Tests fetching of all badges"""
+
+        self.assertEqual(len(self.badge_dao.findAllBadges()), Const.BADGES_COUNT)
+
+    def test_findBadgeByIndex(self):
+        """Tests search of the badge by index"""
+
+        for title, indices in self.test_badges.items():
+            with self.subTest(indices=indices, title=title):
+                for index in indices:
+                    self.assertEqual(title, self.badge_dao.findBadgeByIndex(index).title)
+
+    # def tearDown(self):
+    #     self.badge_dao.dispose()
 
 
 if __name__ == '__main__':

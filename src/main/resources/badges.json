@@ -1,37 +1,37 @@
 [
-	{
-		"title": 		"Pithecanthropus",
-		"prompt": 		"No Match for Lev Tolstoy",
-		"index_low": 	"0",
-		"index_high": 	"0.25",
-		"description": 	"Either you are using this tool on a wrong text or this was written by that stupid guy that was offending you at High school"
-	},
-	{
-		"title": 	"Younger sister",
-		"prompt": 	"Quarter Lev Tolstoy",
-		"index_low":	"0.25",
-		"index_high": 	"0.5", 
-		"description": 	"Looks like what is written here makes sense, but unless the author is your close friend or relative you won't find this reading esthetically pleasing"
-	},
-	{
-		"title": 	"Pragmatic writer",
-		"prompt": 	"Half Lev Tolstoy",
-		"index_low":	"0.5",
-		"index_high": 	"0.75",
-		"description": 	"Written either by a lazy person or just the one that values essence over the form"
-	},
-	{
-		"title": 	"Neat essayist",
-		"prompt": 	"3/4 Lev Tolstoy",
-		"index_low":	"0.75",
-		"index_high": 	"1",
-		"description": 	"Written either by a well-educated gentleman or lady"
-	},
-	{
-		"title": 	"Beyond Good and Evil",
-		"prompt": 	"Killed Lev Tolstoy",
-		"index_low": 	"1",
-		"index_high": 	"999",
-		"description": 	"What is written here was forged by a tormented soul of a grammar Nazi with graphomania in a terminal stage. If the author is not Irish whose name consists of five or more words or/ else he doesn't want his son to end up with schizophrenia he'd better stop and reevaluate his life decisions."
-	}
+  {
+    "title": "Pithecanthropus",
+    "prompt": "No Match for Lev Tolstoy",
+    "index_low": "0",
+    "index_high": "0.25",
+    "description": "Either you are using this tool on a wrong text or this was written by that stupid guy that was offending you at High school"
+  },
+  {
+    "title": "Younger sister",
+    "prompt": "Quarter Lev Tolstoy",
+    "index_low": "0.25",
+    "index_high": "0.5",
+    "description": "Looks like what is written here makes sense, but unless the author is your close friend or relative you won't find this reading esthetically pleasing"
+  },
+  {
+    "title": "Pragmatic writer",
+    "prompt": "Half Lev Tolstoy",
+    "index_low": "0.5",
+    "index_high": "0.75",
+    "description": "Written either by a lazy person or just the one that values essence over the form"
+  },
+  {
+    "title": "Neat essayist",
+    "prompt": "3/4 Lev Tolstoy",
+    "index_low": "0.75",
+    "index_high": "1",
+    "description": "Written either by a well-educated gentleman or lady"
+  },
+  {
+    "title": "Beyond Good and Evil",
+    "prompt": "Killed Lev Tolstoy",
+    "index_low": "1",
+    "index_high": "inf",
+    "description": "What is written here was forged by a tormented soul of a grammar Nazi with graphomania in a terminal stage. If the author is not Irish whose name consists of five or more words or/ else he doesn't want his son to end up with schizophrenia he'd better stop and reevaluate his life decisions."
+  }
 ]
