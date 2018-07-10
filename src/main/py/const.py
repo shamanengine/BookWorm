@@ -6,12 +6,17 @@ class Const:
     BADGE_JSON_TEST = "../resources/badges.json"
     BADGES_COUNT = 5
 
+    WAR_TEXT = "../resources/B1CH1.txt"
+    WAR_TEXT_CLEAN = "../resources/B1CH1_clean.txt"
+
+    README = "../../../README.md"
 
 if __name__ == '__main__':
     print(Const.BADGE_JSON_MAIN)
     const = Const
     print(const.BADGE_JSON_TEST)
     print(Const.BADGES_COUNT)
+    print(Const.WAR_TEXT)
 
 # Put in const.py...:
 # class _const:
